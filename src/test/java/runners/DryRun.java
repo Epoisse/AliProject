@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features/",
         glue = "steps",
         dryRun = true,
-        tags = "@smoke"
+        tags = "@negative"
 )
 
 public class DryRun {

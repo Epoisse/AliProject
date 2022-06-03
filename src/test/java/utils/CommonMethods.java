@@ -6,6 +6,9 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import java.time.Duration;
+import java.util.concurrent.TimeUnit;
+
 public class CommonMethods extends PageInitializers{
 
     public static WebDriver driver;
@@ -25,6 +28,7 @@ public class CommonMethods extends PageInitializers{
         }
         // launching the application and to do so we need to provide the url (the link)
         driver.get(ConfigReader.getPropertiesValue("url"));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
         initializePageObjects();
     }
 
