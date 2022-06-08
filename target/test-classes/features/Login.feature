@@ -8,6 +8,6 @@ Feature: Validation of login scenarios
 
   @negative
   Scenario: Invalid username
-    Given user enters valid admin credentials
+    Given user enters invalid username and valid password
     When user clicks on login button
     Then user sees the error message "Invalid credentials"

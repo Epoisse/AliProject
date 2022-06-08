@@ -11,9 +11,9 @@ import utils.CommonMethods;
         // glue is where we find implementations for our feature files
         // we provide the path of package to get all the steps definitions
         glue = "steps",
-        dryRun = true,
+        dryRun = false,
         monochrome = true,
-        tags = "@ali"
+        tags = "@dashboard"
 )
 
 public class RunnerClass {
