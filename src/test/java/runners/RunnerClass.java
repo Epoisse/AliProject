@@ -13,7 +13,7 @@ import utils.CommonMethods;
         glue = "steps",
         dryRun = false,
         monochrome = true,
-        tags = "@dashboard"
+        tags = "@addemployee"
 )
 
 public class RunnerClass {

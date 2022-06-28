@@ -1,5 +1,6 @@
 package steps;
 
+import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
@@ -11,7 +12,7 @@ import java.util.List;
 public class DashboardSteps extends CommonMethods {
 
     @Then("admin user verifies all the dashboard tabs")
-    public void admin_user_verifies_all_the_dashboard_tabs(io.cucumber.datatable.DataTable dataTable) {
+    public void admin_user_verifies_all_the_dashboard_tabs(DataTable dataTable) {
         List<String> expectedTabs = dataTable.asList();
         List<String> actualTabs = new ArrayList<>();
 

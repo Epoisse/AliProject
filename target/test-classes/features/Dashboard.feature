@@ -13,4 +13,4 @@ Feature: Dashboard tabs verification functionality
       | Recruitment |
       | Performance |
       | Dashboard   |
-      | Folders  |
+      | Directory   |

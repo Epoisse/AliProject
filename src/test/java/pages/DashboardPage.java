@@ -12,6 +12,12 @@ public class DashboardPage extends CommonMethods {
     @FindBy(xpath = "//div[@class='menu']/ul/li")
     public List<WebElement> menuTabs;
 
+    @FindBy(linkText = "PIM")
+    public WebElement pimTab;
+
+    @FindBy(id = "btnAdd")
+    public WebElement addButton;
+
     public DashboardPage() {
         PageFactory.initElements(driver, this);
     }
